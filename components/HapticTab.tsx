@@ -1,8 +1,14 @@
 import { BottomTabBarButtonProps } from '@react-navigation/bottom-tabs';
 import { PlatformPressable } from '@react-navigation/elements';
 import * as Haptics from 'expo-haptics';
+import { Text, View } from 'react-native';
 
 export function HapticTab(props: BottomTabBarButtonProps) {
+  const ShouldSuggest = () => {
+    return <View>
+      <Text>ShouldSuggest</Text>
+    </View>
+  }
   return (
     <PlatformPressable
       {...props}
